@@ -6,47 +6,157 @@
     <meta name="description" content="IMDb - Eliza Dushku (Week 1 homework)">
     <meta name="keywords" content="Eliza Dushku, IMDb, Helio Training">
     <meta name="author" content="Armand Sultantono">
+
+
+    <style>
+        body {
+            background-color: #CECDC9;
+            padding: 0;
+        }
+        
+        .page-wrap {
+            width: 1008px;
+            margin: 0 auto;
+        }
+        
+        .row,
+        header,
+        section,
+        article,
+        figure {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: auto -15px;
+        }
+        
+        [class*=col-] {
+            padding: 0 15px
+        }
+        
+        [class*='col-'] {
+            float: left;
+            min-height: 1px;
+            height: 100%;
+            padding: 0 15px
+        }
+        
+        .col-1 {
+            width: 8.333333333333333%;
+        }
+        
+        .col-2 {
+            width: 16.666666666666667%;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+        
+        .col-4 {
+            width: 33.333333333333332%;
+        }
+        
+        .col-5 {
+            width: 41.666666666666665%;
+        }
+        
+        .col-6 {
+            width: 50%;
+        }
+        
+        .col-7 {
+            width: 58.333333333333331%;
+        }
+        
+        .col-8 {
+            width: 66.666666666666664%;
+        }
+        
+        .col-9 {
+            width: 75%;
+        }
+        
+        .col-10 {
+            width: 83.333333333333333%;
+        }
+        
+        .col-11 {
+            width: 91.666666666666666%;
+        }
+        
+        .col-12 {
+            width: 100%;
+        }
+        
+        #navbar {
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #646464 0%, #0e0e0e 100%) repeat scroll 0 0;
+            border-top: 1px solid #444;
+            color: #fff;
+            font: 10pt Verdana, Arial, sans-serif;
+            height: auto;
+            margin: 15px auto auto 0;
+            padding: 0;
+            position: relative;
+            width: 1008px;
+            z-index: 200;
+        }
+        
+        #consumer_main_nav {
+            bottom: 0;
+            left: 140px;
+            position: absolute;
+        }
+
+    </style>
+
 </head>
 
 <body>
-    <header>
-        <h1>IMDb</h1>
+    <div class="page-wrap">
+        <div class="row">
+            <div class="col-12">
+                <header id="navbar">
+                    <h1>IMDb</h1>
 
-        <nav>
-            <ul>
-                <li>Movies, TV & Showtimes</li>
-                <li>Celebs, Events & Photos</li>
-                <li>News & Community</li>
-                <li>Watchlist</li>
-            </ul>
+                    <nav id="consumer_main_nav">
+                        <ul>
+                            <li>Movies, TV & Showtimes</li>
+                            <li>Celebs, Events & Photos</li>
+                            <li>News & Community</li>
+                            <li>Watchlist</li>
+                        </ul>
 
-        </nav>
+                    </nav>
+                </header>
 
-    </header>
-
-
-    <article>
-        <div>
-            <img src="#whatever" alt="profile image" />
+            </div>
         </div>
-        <div>
-            <h2>Eliza Dushku</h2>
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <div>
+                        <img src="#whatever" alt="profile image" />
+                    </div>
+                    <div>
+                        <h2>Eliza Dushku</h2>
 
-            <small>Actress | Producer</small>
-            <p>
-                Eliza Dushku was born in Boston, Massachusetts, to Judith (Rasmussen), a political science professor, and Philip R. Dushku, a teacher and administrator. Her father is Albanian and her mother is American (of Danish, Irish, English, and German descent). She was discovered at the end of a five-month search throughout the United States for the perfect ... <a href="#">See full bio</a> » Eliza Dushku was born in Boston, Massachusetts, to Judith (Rasmussen), a political science professor, and Philip R. Dushku, a teacher and administrator. Her father is Albanian and her mother is American (of Danish, Irish, English, and German descent). She was discovered at the end of a five-month search throughout the United States for the perfect ... <a href="#">See full bio</a> »</p>
+                        <small>Actress | Producer</small>
+                        <p>
+                            Eliza Dushku was born in Boston, Massachusetts, to Judith (Rasmussen), a political science professor, and Philip R. Dushku, a teacher and administrator. Her father is Albanian and her mother is American (of Danish, Irish, English, and German descent). She was discovered at the end of a five-month search throughout the United States for the perfect ... <a href="#">See full bio</a> » Eliza Dushku was born in Boston, Massachusetts, to Judith (Rasmussen), a political science professor, and Philip R. Dushku, a teacher and administrator. Her father is Albanian and her mother is American (of Danish, Irish, English, and German descent). She was discovered at the end of a five-month search throughout the United States for the perfect ... <a href="#">See full bio</a> »</p>
 
-            <p><strong>Born:</strong> December 30, 1980 in Boston, Massachusetts, USA</p>
-        </div>
-    </article>
-    <section>
-        <h3> 7 nominations. <a href="#">See more awards</a> » </h3>
-    </section>
+                        <p><strong>Born:</strong> December 30, 1980 in Boston, Massachusetts, USA</p>
+                    </div>
+                </article>
+                <section>
+                    <h3> 7 nominations. <a href="#">See more awards</a> » </h3>
+                </section>
 
-    <section>
-        <h2>Filmography</h2>
-        <div>
-            <select name="show by ...">
+                <section>
+                    <h2>Filmography</h2>
+                    <div>
+                        <select name="show by ...">
             <option value="default">show by ...</option>
             <option value="job">Job</option>
             <option value="year">Year »</option>
@@ -56,110 +166,120 @@
             <option value="keyword">Keyword</option>
 
 </select>
-        </div>
-        <div>
-                            <h3>Actress (62 credits)</h3>
-            <table style="width:100%">
+                    </div>
+                    <div>
+                        <h3>Actress (62 credits)</h3>
+                        <table style="width:100%">
 
-                <tr>
-                    <th>Film</th>
-                    <th>Year</th>
-                </tr>
-                <tr>
-                    <td>
-                        <h4><a href="#">Eloise</a></h4>Pia Carter</td>
-                    <td>2017</td>
+                            <tr>
+                                <th>Film</th>
+                                <th>Year</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4><a href="#">Eloise</a></h4>Pia Carter</td>
+                                <td>2017</td>
 
-                </tr>
-                <tr>
-                    <td>
-                        <h4><a href="#">The Saint</a> (TV Movie)</h4> <a href="#">Patricia Holm</a></td>
-                    <td>2016</td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4><a href="#">Con Man</a> (TV Series)</h4> Cindy
-                        <ul>
-                            <li><a href="#">Gum Drop</a> (2016) ... Cindy </li>
-                        </ul>
-                    </td>
-                    <td>2016</td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4><a href="#">Princess Rap Battle</a> (TV Series short)</h4> <a href="#">Rapunzel</a>
-                        <ul>
-                            <li><a href="#">Rapunzel & Flynn vs. Anna & Kristoff</a> (2016) ... <a href="#">Rapunzel</a> </li>
-                        </ul>
-                    </td>
-                    <td>2016</td>
-                </tr>
-                <tr>
-                    <td><h4><a href="#">Banshee</a> (TV Series)</h4> Veronica Dawson
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4><a href="#">The Saint</a> (TV Movie)</h4> <a href="#">Patricia Holm</a></td>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4><a href="#">Con Man</a> (TV Series)</h4> Cindy
+                                    <ul>
+                                        <li><a href="#">Gum Drop</a> (2016) ... Cindy </li>
+                                    </ul>
+                                </td>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4><a href="#">Princess Rap Battle</a> (TV Series short)</h4> <a href="#">Rapunzel</a>
+                                    <ul>
+                                        <li><a href="#">Rapunzel & Flynn vs. Anna & Kristoff</a> (2016) ... <a href="#">Rapunzel</a> </li>
+                                    </ul>
+                                </td>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4><a href="#">Banshee</a> (TV Series)</h4> Veronica Dawson
 
-                        <ul>
-                            <li><a href="#">Requiem</a> (2016) ... Veronica Dawson </li>
-                            <li><a href="#">Truths Other Than the Ones You Tell Yourself</a> (2016) ... Veronica Dawson </li>
-                            <li><a href="#">Only One Way a Dogfight Ends </a> (2016) ... Veronica Dawson </li>
-                            <li><a href="#">A Little Late to Grow a Pair  </a> (2016) ... Veronica Dawson </li>
-                            <li><a href="#">Innocent Might Be a Bit of a Stretch </a> (2016) ... Veronica Dawson </li>
+                                    <ul>
+                                        <li><a href="#">Requiem</a> (2016) ... Veronica Dawson </li>
+                                        <li><a href="#">Truths Other Than the Ones You Tell Yourself</a> (2016) ... Veronica Dawson </li>
+                                        <li><a href="#">Only One Way a Dogfight Ends </a> (2016) ... Veronica Dawson </li>
+                                        <li><a href="#">A Little Late to Grow a Pair  </a> (2016) ... Veronica Dawson </li>
+                                        <li><a href="#">Innocent Might Be a Bit of a Stretch </a> (2016) ... Veronica Dawson </li>
 
-                        </ul>
-                    </td>
-                    <td>2017</td>
-                </tr>
-            </table>
-        </div>
+                                    </ul>
+                                </td>
+                                <td>2017</td>
+                            </tr>
+                        </table>
+                    </div>
 
-    </section>
+                </section>
 
 
 
-    <section>
-        <h2>Contribute to This Page</h2>
-        <button type="button">Edit Page</button>
-        <button type="button">Add Resume</button>
+                <section>
+                    <h2>Contribute to This Page</h2>
+                    <button type="button">Edit Page</button>
+                    <button type="button">Add Resume</button>
 
-    </section>
-    <aside>
-        <div>
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Biography</a></li>
-                <li><a href="#">Awards</a></li>
-                <li><a href="#">Photo Gallery</a></li>
-                <li><a href="#">Filmography</a><span> (by Job)</span></li>
-                <li><a href="#">Trailers and Videos</a></li>
-            </ul>
-            <div><a href="#">Explore More</a>
+                </section>
+
             </div>
-        </div>
+            <div class="col-3">
+                <aside>
+                    <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Biography</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">Photo Gallery</a></li>
+                            <li><a href="#">Filmography</a><span> (by Job)</span></li>
+                            <li><a href="#">Trailers and Videos</a></li>
+                        </ul>
+                        <div><a href="#">Explore More</a>
+                        </div>
+                    </div>
 
-        <div>
-            <h3><a href="#">Most Decorated Oscar Films of All Time</a></h3>
-            <img alt="widget image" src="#whatever" />
-            <p>While it's an honor just to be nominated, some movies have hauled away an armload of statues on Oscar night. See our gallery of films that earned four or more Academy Awards.</p>
+                    <div>
+                        <h3><a href="#">Most Decorated Oscar Films of All Time</a></h3>
+                        <img alt="widget image" src="#whatever" />
+                        <p>While it's an honor just to be nominated, some movies have hauled away an armload of statues on Oscar night. See our gallery of films that earned four or more Academy Awards.</p>
 
-            <p><a href="#">Explore More</a> »</div>
+                        <p><a href="#">Explore More</a> »</div>
 
 
-        <div>
-            <h3><a href="#">Related News</a></h3>
-            <div>
-                <div>Eliza Dushku Details Her Secret Struggle With Drug Addiction (Video)
-                    <br>8 March 2017 1:26 PM, -07:00 | <a href="#">The Wrap</a></div>
-                <div>Eliza Dushku Opens Up About Her Struggle With Addiction [Video]
-                    <br>8 March 2017 1:26 PM, -07:00 | <a href="#">Uinterview</a></div>
+                    <div>
+                        <h3><a href="#">Related News</a></h3>
+                        <div>
+                            <div>Eliza Dushku Details Her Secret Struggle With Drug Addiction (Video)
+                                <br>8 March 2017 1:26 PM, -07:00 | <a href="#">The Wrap</a></div>
+                            <div>Eliza Dushku Opens Up About Her Struggle With Addiction [Video]
+                                <br>8 March 2017 1:26 PM, -07:00 | <a href="#">Uinterview</a></div>
+                        </div>
+                        <p><a href="#">See all 1741 related articles</a> »</div>
+
+
+                </aside>
             </div>
-            <p><a href="#">See all 1741 related articles</a> »</div>
-
-
-    </aside>
-    <footer>
-        <small>An Amazon.com company.</small>
-        <small>Copyright © 1990-2017 IMDb.com, Inc.</small>
-    </footer>
-
+                <div class="row">
+                    <div class="col-12">
+                        <footer>
+                            <small>An Amazon.com company.</small>
+                            <small>Copyright © 1990-2017 IMDb.com, Inc.</small>
+                        </footer>
+                    </div>
+                </div>
+        </div>
+    </div>
 </body>
 
 </html>
