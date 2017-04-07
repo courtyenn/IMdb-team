@@ -17,6 +17,7 @@
         .page-wrap {
             width: 1008px;
             margin: 0 auto;
+            
         }
         
         .row,
@@ -28,7 +29,9 @@
             position: relative;
             width: 100%;
             height: 100%;
+/*
             margin: auto -15px;
+*/
         }
         
         [class*=col-] {
@@ -108,6 +111,21 @@
             left: 140px;
             position: absolute;
         }
+        
+        #footer {
+            background-color: #EDEDEC;
+            clear: both;
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 11px;
+            padding-bottom: 30px;
+        }
+        
+        .float-right {
+            float: right;
+        }
+        
+
+
 
     </style>
 
@@ -270,14 +288,14 @@
 
                 </aside>
             </div>
-                <div class="row">
-                    <div class="col-12">
-                        <footer>
-                            <small>An Amazon.com company.</small>
-                            <small>Copyright © 1990-2017 IMDb.com, Inc.</small>
-                        </footer>
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                    <footer id="footer">
+                        <small>An Amazon.com company.</small>
+                        <small class="float-right">Copyright © 1990-2017 IMDb.com, Inc.</small>
+                    </footer>
                 </div>
+            </div>
         </div>
     </div>
 </body>
