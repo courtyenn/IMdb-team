@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="My Test Page">
+    <meta name="author" content="Armand">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <style>
+        ul.main_nav {
+            font-size: 13px;
+            list-style: outside none none;
+            padding: 0 0 0 1px;
+        }
+        
+        ul.main_nav {
+            font-size: 13px;
+            list-style: outside none none;
+            padding: 0 0 0 1px;
+        }
+        
+        ul {
+            margin: 0;
+        }
+        
+        ul.main_nav li {
+            background: transparent none repeat scroll 0 0;
+            float: left;
+            height: 39px;
+            list-style: outside none none;
+            margin: 0;
+            padding: 7px 40px 0 15px;
+            position: relative;
+            width: 86px;
+            border-right: solid;
+            border-right-width: 1px;
+            border-right-color: black;
+            line-height: 120%;
+        }
+        
+        li {
+            margin-bottom: 0.5em;
+        }
+        
+        .main_nav li:hover {
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #333333 15%, #505050 50%, #333333 85%) repeat scroll 0 0;
+        }
+        
+        .downArrow {
+            border-color: #ccc transparent transparent;
+            border-style: solid;
+            border-width: 4px 4px 0;
+            height: 0;
+            line-height: 0;
+            position: absolute;
+            right: 17px;
+            top: 23px;
+            transition: all 0.3s ease 0s;
+            width: 0;
+        }
+        
+        .main_nav :first-child {
+            border-left: solid;
+            border-left-width: 1px;
+            border-left-color: black;
+        }
+        
+        .main_nav_container {
+            bottom: 0;
+            left: 140px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="main_nav_container">
+        <ul class="main_nav">
+            <li> Movies, TV & Showtimes<span class="downArrow"></span></li>
+            <li>Celebs, Events & Photos<span class="downArrow"></span></li>
+            <li>News & Community<span class="downArrow"></span></li>
+            <li>Watchlist<span class="downArrow"></span></li>
+        </ul>
+
+    </nav>
+
+</html>
