@@ -9,6 +9,13 @@
 
 
     <style>
+        * {
+            box-sizing: border-box;
+            font-size: 13px;
+            font-family: Verdana, Arial, sans-serif;
+            text-align: start;
+        }
+        
         body {
             background-color: #CECDC9;
             padding: 0;
@@ -18,6 +25,11 @@
             width: 1008px;
             margin: 0 auto;
             background-color: white;
+        }
+        
+        a:link {
+            color: #136cb2;
+            text-decoration: none;
         }
         
         .row,
@@ -40,7 +52,15 @@
             color: #333333;
             background-color: white;
             border: 1px solid #dddddd;
-
+        }
+        
+        .nommy {
+            border: 6px double white;
+            ;
+            border-radius: 6px;
+            background: #efe3a4;
+            margin-top: 15px;
+            padding: 0 0 0 5px;
         }
         
         [class*=col-] {
@@ -121,6 +141,12 @@
             position: absolute;
         }
         
+        nav {
+            text-color: white;
+            background-color: black;
+            border: solid;
+        }
+        
         #footer {
             background-color: #EDEDEC;
             clear: both;
@@ -131,11 +157,54 @@
         
         .float-right {
             float: right;
+
+        
         }
         
-        .btn,
-        .primary,
-        .large {}
+        .odd {
+            background-color: #f6f6f5;
+        }
+        
+        .even {
+            background-color: #fbfbfb;
+        }
+        
+        td a {
+            color: #136cb2
+        }
+        
+        ul li a {
+            color: #136cb2
+        }
+        
+        .actress {
+            color: #a58500;
+            font-size: 15px;
+            /*
+            background-color: #eeeeee;
+
+            padding: 6px 10px;*/
+        }
+        
+        .filmography {
+            background-color: #eee;
+            background-image: -moz-linear-gradient(center bottom, #e8e8e8 0%, #ffffff 50%);
+            border-top: 1px solid #e8e8e8;
+            color: #a58500;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 0 0 1px;
+            padding: 6px 10px;
+            text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff;
+            cursor: pointer;
+        }
+        
+        .filmography:hover {
+            background-color: #f8f1be;
+            background-image: -moz-linear-gradient(center bottom, #f8f1be 0%, #ffffff 50%);
+            text-shadow: 0 0 0.3em #fff, 0 0 0.3em #fff;
+            cursor: pointer;
+        }
 
     </style>
 
@@ -177,13 +246,14 @@
                         <p><strong>Born:</strong> December 30, 1980 in Boston, Massachusetts, USA</p>
                     </div>
                 </article>
-                <section>
+                <article class="nommy">
                     <h3> 7 nominations. <a href="#">See more awards</a> » </h3>
-                </section>
+                </article>
 
                 <article>
-                    <h2>Filmography</h2>
                     <div>
+                    <h2>Filmography</h2>
+                    <div class="float-right">
                         <select name="show by ...">
             <option value="default">show by ...</option>
             <option value="job">Job</option>
@@ -195,26 +265,26 @@
 
 </select>
                     </div>
+                        </div>
                     <div>
-                        <h3>Actress (62 credits)</h3>
-                        <table style="width:100%">
 
-                            <tr>
-                                <th>Film</th>
-                                <th>Year</th>
-                            </tr>
-                            <tr>
+                        <div class="filmography">
+
+                            <h3 class="actress">Actress (62 credits)</h3>
+                        </div>
+                        <table style="width:100%">
+                            <tr class="odd">
                                 <td>
                                     <h4><a href="#">Eloise</a></h4>Pia Carter</td>
                                 <td>2017</td>
 
                             </tr>
-                            <tr>
+                            <tr class="even">
                                 <td>
                                     <h4><a href="#">The Saint</a> (TV Movie)</h4> <a href="#">Patricia Holm</a></td>
                                 <td>2016</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>
                                     <h4><a href="#">Con Man</a> (TV Series)</h4> Cindy
                                     <ul>
@@ -223,7 +293,7 @@
                                 </td>
                                 <td>2016</td>
                             </tr>
-                            <tr>
+                            <tr class="even">
                                 <td>
                                     <h4><a href="#">Princess Rap Battle</a> (TV Series short)</h4> <a href="#">Rapunzel</a>
                                     <ul>
@@ -232,7 +302,7 @@
                                 </td>
                                 <td>2016</td>
                             </tr>
-                            <tr>
+                            <tr class="odd">
                                 <td>
                                     <h4><a href="#">Banshee</a> (TV Series)</h4> Veronica Dawson
 
