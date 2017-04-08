@@ -17,7 +17,7 @@
         .page-wrap {
             width: 1008px;
             margin: 0 auto;
-            
+            background-color: white;
         }
         
         .row,
@@ -30,6 +30,16 @@
             width: 100%;
             height: 100%;
             margin: auto -15px;
+        }
+        
+        article {
+            border-radius: 6px;
+            box-shadow: none;
+            padding 10px 12px;
+            max-width: none;
+            color: #333333;
+            background-color: white;
+            border: 1px solid #dddddd;
 
         }
         
@@ -103,7 +113,6 @@
             position: relative;
             width: 1008px;
             z-index: 200;
-
         }
         
         #consumer_main_nav {
@@ -124,8 +133,9 @@
             float: right;
         }
         
-
-
+        .btn,
+        .primary,
+        .large {}
 
     </style>
 
@@ -155,7 +165,7 @@
             <div class="col-7">
                 <article>
                     <div>
-                        <img src="#whatever" alt="profile image" />
+                        <img src="/images/eliza_dushku_photo.jpg" alt="eliza dushku profile image" />
                     </div>
                     <div>
                         <h2>Eliza Dushku</h2>
@@ -171,7 +181,7 @@
                     <h3> 7 nominations. <a href="#">See more awards</a> » </h3>
                 </section>
 
-                <section>
+                <article>
                     <h2>Filmography</h2>
                     <div>
                         <select name="show by ...">
@@ -240,16 +250,16 @@
                         </table>
                     </div>
 
-                </section>
+                </article>
 
 
 
-                <section>
+                <article>
                     <h2>Contribute to This Page</h2>
                     <button type="button">Edit Page</button>
                     <button type="button">Add Resume</button>
 
-                </section>
+                </article>
 
             </div>
             <div class="col-3">
